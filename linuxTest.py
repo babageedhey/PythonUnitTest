@@ -6,6 +6,8 @@ import userTest
 import groupClassTest
 import resumeTest
 import studentPackageTest
+import accountSettingTest
+import jobPlacementTest
 
 direct = os.getcwd()
 
@@ -25,6 +27,8 @@ class MyTestSuite(unittest.TestCase):
             unittest.defaultTestLoader.loadTestsFromTestCase(groupClassTest.GroupTest),
             unittest.defaultTestLoader.loadTestsFromTestCase(resumeTest.ResumeTest),
             unittest.defaultTestLoader.loadTestsFromTestCase(studentPackageTest.StudPackageTest),
+            unittest.defaultTestLoader.loadTestsFromTestCase(accountSettingTest.AccountSettingTest),
+            unittest.defaultTestLoader.loadTestsFromTestCase(jobPlacementTest.JobPlacementTest),
         ])
 
         outfield = open(direct + "\LinuxTest.html", "w")
