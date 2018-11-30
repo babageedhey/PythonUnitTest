@@ -11,7 +11,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 parser = ConfigParser()
-
+options = webdriver.ChromeOptions()
 
 parser.read("credentials.ini")
 
@@ -19,9 +19,8 @@ parser.read("credentials.ini")
 class GroupTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+        self.driver = webdriver.Chrome(options=options, executable_path=r"C:\Users\Jide\Desktop\Training\Projects\LinuxJobberProject\Testing\chromedriver.exe")
         self.driver.maximize_window()
-    
 
     def test_login_auto(self):
         self.driver.get("http://web.linuxjobber.com/users/login")#navigate to linuxjobber.com

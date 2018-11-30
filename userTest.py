@@ -1,30 +1,24 @@
-
-import unittest
-import time
-
 import os
-
-direct = os.getcwd()
-
+import time
+import unittest
 from configparser import ConfigParser
+
 from selenium import webdriver
 from selenium.webdriver.common import keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
 
 parser = ConfigParser()
-
+options = webdriver.ChromeOptions()
 
 parser.read("credentials.ini")
-
-
 
 
 class UserTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+        self.driver = webdriver.Chrome(options=options, executable_path=r"C:\Users\Jide\Desktop\Training\Projects\LinuxJobberProject\Testing\chromedriver.exe")
         self.driver.maximize_window()
 
 

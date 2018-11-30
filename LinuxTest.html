@@ -170,9 +170,9 @@ function showOutput(id, name) {
 --></script>
 <div class='heading'>
 <h1>LinuxJobber Test Report</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-08-20 15:20:52</p>
-<p class='attribute'><strong>Duration:</strong> 0:08:07.564985</p>
-<p class='attribute'><strong>Status:</strong> Error 9</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-11-14 14:14:48</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.320997</p>
+<p class='attribute'><strong>Status:</strong> Error 16</p>
 
 <p class='description'>An Automated Test for the Components on the Web Page</p>
 </div>
@@ -224,19 +224,24 @@ function showOutput(id, name) {
         <pre>
         
 ft1.1: Traceback (most recent call last):
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\userTest.py", line 55, in test_login_auto
-    self.driver.find_element_by_id('username').send_keys(username)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 359, in find_element_by_id
-    return self.find_element(by=By.ID, value=id_)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 966, in find_element
-    'value': value})['value']
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"username"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\userTest.py", line 27, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 
 
 
@@ -260,19 +265,24 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
         <pre>
         
 ft1.2: Traceback (most recent call last):
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\userTest.py", line 65, in test_password_recovery
-    self.driver.find_element_by_xpath(".//*[@id='UserLoginForm']//a[1]").click()
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 393, in find_element_by_xpath
-    return self.find_element(by=By.XPATH, value=xpath)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 966, in find_element
-    'value': value})['value']
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='UserLoginForm']//a[1]"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\userTest.py", line 27, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 
 
 
@@ -296,19 +306,24 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
         <pre>
         
 ft1.3: Traceback (most recent call last):
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\userTest.py", line 37, in test_user_signup
-    self.driver.find_element_by_link_text("Sign Up").click()
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 427, in find_element_by_link_text
-    return self.find_element(by=By.LINK_TEXT, value=link_text)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 966, in find_element
-    'value': value})['value']
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Sign Up"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\userTest.py", line 27, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 
 
 
@@ -341,19 +356,24 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
         <pre>
         
 ft2.1: Traceback (most recent call last):
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\groupClassTest.py", line 43, in test_groupclass_guest_no_option
-    self.driver.find_element_by_link_text('Group Class').click()
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 427, in find_element_by_link_text
-    return self.find_element(by=By.LINK_TEXT, value=link_text)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 966, in find_element
-    'value': value})['value']
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Group Class"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\groupClassTest.py", line 22, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 
 
 
@@ -377,19 +397,24 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
         <pre>
         
 ft2.2: Traceback (most recent call last):
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\groupClassTest.py", line 49, in test_groupclass_guest_option
-    self.driver.find_element_by_link_text('Group Class').click()
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 427, in find_element_by_link_text
-    return self.find_element(by=By.LINK_TEXT, value=link_text)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 966, in find_element
-    'value': value})['value']
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Group Class"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\groupClassTest.py", line 22, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 
 
 
@@ -413,21 +438,24 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
         <pre>
         
 ft2.3: Traceback (most recent call last):
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\groupClassTest.py", line 55, in test_groupclass_user_no_option
-    self.test_login_auto()
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\groupClassTest.py", line 31, in test_login_auto
-    self.driver.find_element_by_id('username').send_keys(username)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 359, in find_element_by_id
-    return self.find_element(by=By.ID, value=id_)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 966, in find_element
-    'value': value})['value']
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"username"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\groupClassTest.py", line 22, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 
 
 
@@ -451,21 +479,24 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
         <pre>
         
 ft2.4: Traceback (most recent call last):
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\groupClassTest.py", line 61, in test_groupclass_user_option
-    self.test_login_auto()
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\groupClassTest.py", line 31, in test_login_auto
-    self.driver.find_element_by_id('username').send_keys(username)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 359, in find_element_by_id
-    return self.find_element(by=By.ID, value=id_)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 966, in find_element
-    'value': value})['value']
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"username"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\groupClassTest.py", line 22, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 
 
 
@@ -489,19 +520,24 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
         <pre>
         
 ft2.5: Traceback (most recent call last):
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\groupClassTest.py", line 31, in test_login_auto
-    self.driver.find_element_by_id('username').send_keys(username)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 359, in find_element_by_id
-    return self.find_element(by=By.ID, value=id_)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 966, in find_element
-    'value': value})['value']
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"username"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\groupClassTest.py", line 22, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 
 
 
@@ -534,19 +570,338 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
         <pre>
         
 ft3.1: Traceback (most recent call last):
-  File "C:\Users\Jide\Desktop\Training\Projects\Linux\test\resumeTest.py", line 31, in test_resume_service
-    self.driver.find_element_by_link_text('Resume Services').click()
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 427, in find_element_by_link_text
-    return self.find_element(by=By.LINK_TEXT, value=link_text)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 966, in find_element
-    'value': value})['value']
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Resume Services"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\resumeTest.py", line 22, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>studentPackageTest.StudPackageTest</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c4',2)">Detail</a></td>
+</tr>
+
+<tr id='ft4.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_student_package_guest</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
+        error</a>
+    <div id='div_ft4.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.1: Traceback (most recent call last):
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\studentPackageTest.py", line 20, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr id='ft4.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_student_package_user</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.2')" >
+        error</a>
+    <div id='div_ft4.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.2: Traceback (most recent call last):
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\studentPackageTest.py", line 20, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>accountSettingTest.AccountSettingTest</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c5',2)">Detail</a></td>
+</tr>
+
+<tr id='ft5.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_account_settings_user</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
+        error</a>
+    <div id='div_ft5.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.1: Traceback (most recent call last):
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\accountSettingTest.py", line 21, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr id='ft5.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_upload_credentials</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.2')" >
+        error</a>
+    <div id='div_ft5.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.2: Traceback (most recent call last):
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\accountSettingTest.py", line 21, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>jobPlacementTest.JobPlacementTest</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td>3</td>
+    <td><a href="javascript:showClassDetail('c6',3)">Detail</a></td>
+</tr>
+
+<tr id='ft6.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_job_placement_user_entry_certificate</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.1')" >
+        error</a>
+    <div id='div_ft6.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft6.1: Traceback (most recent call last):
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\jobPlacementTest.py", line 24, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr id='ft6.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_job_placement_user_senior</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.2')" >
+        error</a>
+    <div id='div_ft6.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft6.2: Traceback (most recent call last):
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\jobPlacementTest.py", line 24, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr id='ft6.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_job_placement_user_senior_noexperience</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.3')" >
+        error</a>
+    <div id='div_ft6.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft6.3: Traceback (most recent call last):
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\subprocess.py", line 997, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jide\Desktop\Training\Projects\Linuxjobber Project\Testing\test_script\jobPlacementTest.py", line 24, in setUp
+    self.driver = webdriver.Chrome(r"C:\Users\Jide\Desktop\Training\Projects\Linux\LinuxJobber\chromedriver.exe")
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 68, in __init__
+    self.service.start()
+  File "C:\Users\Jide\AppData\Local\Programs\Python\Python36-32\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 
 
 
@@ -558,10 +913,10 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>9</td>
+    <td>16</td>
     <td>0</td>
     <td>0</td>
-    <td>9</td>
+    <td>16</td>
     <td>&nbsp;</td>
 </tr>
 </table>
